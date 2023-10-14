@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+}
+
+#container{
+    width: 1000px;
+    height: 350px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+#resim{
+    width: 1000px;
+    height: 350px;
+    position: relative;
+}
+
+.soltaraf{
+    width: 100px;
+    height: 350px;
+    position: absolute;
+    text-align: left;
+    left: 0px;
+    top: 0px;
+}
+
+.sagtaraf{
+    width: 100px;
+    height: 350px;
+    position: absolute;
+    text-align: right;
+    right: 0px;
+    top: 0px;
+}
+
+.sol{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 40%;
+    left: 25px;
+    opacity: 0;
+    transition: all .5s ease-in-out 0s;
+    border: none;
+    cursor: pointer;
+}
+
+.sag{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 40%;
+    right: 25px;
+    opacity: 0;
+    transition: all .5s ease-in-out 0s;
+    border: none;
+    cursor: pointer;
+}
+
+.soltaraf:hover .sol{
+    opacity: 0.5;
+}
+
+.sagtaraf:hover .sag{
+    opacity: 0.5;
+}
